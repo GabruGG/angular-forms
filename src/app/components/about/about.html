@@ -1,0 +1,6 @@
+
+<!-- @if(groceries().length){ -->
+    @for(item of groceries | async ;track $index){
+    <div>{{ item.item }}</div>
+}
+<!-- } -->

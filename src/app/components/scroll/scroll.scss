@@ -1,0 +1,16 @@
+.container {
+    height: 400px;
+    width: 100%;
+    background-color: aliceblue;
+    overflow: scroll;
+}
+
+.cell {
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

@@ -1,0 +1,31 @@
+<form [formGroup]="userForm" (ngSubmit)="handleSubmit()">
+    <input type="text" formControlName="userName"  placeholder="Enter User name"/>
+
+
+
+        @for(cuisine of cuisineArr;track $index){
+            <label>
+                 <input formControlName="cuisine" type="radio" [value]="cuisine"  />
+                 {{cuisine}}
+            </label>
+        }
+        <div>
+            <button [disabled]="userForm.invalid" type="submit">Submit</button>
+        </div>
+</form>
+
+
+<!-- <table>
+
+    <thead>
+        <t
+    </thead>
+</table> -->
+
+@for(user of userData();track $index;let i = $index){
+    <div>
+        <span>{{ user.userName }}</span>
+         <span>{{ user.cuisine }}</span>
+         <button (click)="deleteUserData(i)">Delete</button>
+    </div>
+}

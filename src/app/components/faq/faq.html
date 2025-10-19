@@ -1,0 +1,25 @@
+<!-- <div class="w300 h300">
+    <div class="flex">
+<div class="h100 w100 b-1-b "></div>
+<div class="h100 w100 b-1-b"></div>
+<div class="h100 w100 b-1-b"></div>
+
+</div>
+<div class="flex jc-sb">
+    <div class="h10 w98 b-h-1"></div>
+    <div class="h100 w98 b-h-1"></div>
+</div>
+
+
+<div class="flex">
+<div class="h100 w100 b-1-b"></div>
+<div class="h100 w100 b-1-b"></div>
+<div class="h100 w100 b-1-b"></div>
+</div>
+</div> -->
+
+<div class="container">
+    @for(item of arr;track $index;let i = $index){
+        <div [ngClass]="item.clicked ? 'bg-green' : ''" (click)="cellClicked(i)" class="cell">{{item.number}}</div>
+    }
+</div>

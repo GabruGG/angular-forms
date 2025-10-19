@@ -1,0 +1,9 @@
+<div class="container" (scroll)="onScroll($event)">
+@for(item of renderData;track $index){
+    <div class="cell">
+       <span>{{ item.id }}</span> 
+       <span>{{ item.name }}</span> 
+       <span>{{ item.city }}</span> 
+    </div>
+}
+</div>
